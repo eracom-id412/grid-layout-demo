@@ -34,11 +34,15 @@ body {
     all: unset;
     text-align: center;
     padding: 1.5rem 0;
-    width: 10vw;
+    width: 150px;
     margin-top: 1rem;
     margin-left: 1rem;
     background-color: beige;
     color: black;
+}
+
+#navbar .buttonStyle:last-of-type {
+    margin-bottom: 1rem;
 }
 
 .activebutton {
@@ -53,7 +57,7 @@ body {
 .gridlayout {
     border: 1px solid black;
     width: 70vw;
-    height: 100vh;
+    height: calc(100vh - 2px);
     display: grid;
 }
 
@@ -229,7 +233,8 @@ body {
 .gridlayout9 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
+    gap: 0 20px;
+    /* column-gap: 20px; */
 }
 .gridlayout9 .griditem:first-of-type {
     grid-area: 1 / 1 / 4 / 3;
